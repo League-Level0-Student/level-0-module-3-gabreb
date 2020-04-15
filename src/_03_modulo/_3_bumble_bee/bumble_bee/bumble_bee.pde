@@ -7,6 +7,15 @@ void setup() {
 }
 
 void draw() {
+  for (int i = 0; i < 23; i++) {
+    if ( i % 2 == 0) {
+      fill(0,0,0); 
+    }
+    else {
+      fill(#FFF705); 
+    }
+    ellipse(10+(i*19),10+(i*19),50,50);
+  }
   
 // First run the program and you should see a flower.  
   
@@ -21,7 +30,7 @@ Use modulo to make the colors alternate between yellow and black
 /*
 Now put his head on using drawBeeFace(x,y)
 */
-
+drawBeeFace(445, 445); 
 }
 
 /**************   Use these methods but  DON'T CHANGE THE CODE BELOW  **************/
